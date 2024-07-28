@@ -1,0 +1,108 @@
+/*Homepage Styling*/
+section {
+    padding: 20px;
+    background: #FFFFFF;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #DBD3D8;
+    margin: 1%;
+} 
+
+/*Welcome section*/
+.welcome-section {
+    margin: 1%;
+}
+.welcome-messages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+}
+
+#greeting {
+    color: #DF5D51 ;
+}
+
+.message {
+    color: #223843;
+    gap: 1px;
+}
+
+#homepage-img-container {
+    display: flex;
+    justify-content: center;
+    margin: 1%;
+}
+
+#homepage-img {
+    height: 50%;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+}
+
+#homepage-img:hover {
+    transform: scale(1.1);
+    margin: 2%;
+}
+
+/*Announcements section*/
+.announcements {
+    text-align: center;
+}
+
+.announcements p {
+    color: #D8B4A0;
+    font-size: 20px;
+}
+
+.newsletter-signup form {
+    display: flex;
+    justify-content: center;
+}
+
+.news-link a:link {
+    color: #223843;
+}
+
+.news-link a:active {
+    color: #223843;
+}
+
+.news-link a:hover {
+    color: #223843;
+}
+
+/*Newsletter section*/
+.newsletter-signup a:visited {
+    color: #223843;
+}
+
+.newsletter-signup input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #D77A61;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter-signup input:focus {
+    color: #D77A61;
+    outline: none;
+}
+
+.newsletter-signup button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #D77A61;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h2, h4 {
+    color: #223843;
+    gap: 1px;
+}

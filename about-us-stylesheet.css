@@ -1,0 +1,73 @@
+/*Styling the About Us page*/
+#story, #meet-the-team {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #f9f9f9;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 5px #BFC0C0;
+}
+
+#story h1, #meet-the-team h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #D77A61;
+}
+
+#story h3, #meet-the-team h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#story h3 {
+    color: #711C40;
+}
+
+.member-profile {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.member-profile:hover {
+    background-color: #EFF1F3;
+}
+
+.member-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member-profile img:hover {
+    transform: scale(1.1); /* Slightly increase size */
+    box-shadow: 0 4px 8px #DBD3D8;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}    
+
+.member-profile h3 {
+    font-size: 20px;
+    color: #711C40;
+    vertical-align: middle;
+    margin: 0;
+    align-content: center;
+}
+
+.member-profile p {
+    display: block;
+    margin: 5px 0px;
+    color: #223843;
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-block-end:  3%;
+}

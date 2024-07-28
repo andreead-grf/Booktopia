@@ -1,0 +1,340 @@
+/*Styling the My Books page*/
+
+/*Styling the tutorial section*/
+#steps-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#tutorial-intro, #tutorial-outro {
+    color: #D77A61;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    position : relative;
+    width : 1100px;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    padding : 30px; 
+    margin-top: 5%; 
+}
+  
+.container .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;  
+    background-color: #FFFFFF;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 4px 8px #BFC0C0;
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+}
+
+.container .card:hover {
+    height : 400px;    
+}
+
+#step-one:hover {
+    margin-top: 10%;
+}
+  
+.container .card .image {
+    position : relative;
+    width : 260px;
+    height : 260px;
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 4px 8px #EFF1F3;
+    z-index : 1;
+}
+  
+.container .card .image img {
+    width : 100%;
+    height: 100%;
+    border-radius : 15px;
+}
+
+.container .card .text-content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #223843;
+    text-align : center; 
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+}
+  
+.container .card:hover .text-content {
+    margin-top : 30px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.2s;  
+}
+
+.text-content h3 {
+    color: #711C40;
+}
+
+.text-content p {
+    color:#223843;
+    font-size: large;
+}
+
+/*Overall buttons styling*/
+.buttons {
+    border-radius: 10%;
+    border-color: #D8B4A0;
+    background-color: #D8B4A0;
+    color: #FFFFFF;
+    padding: 2% 3%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background-color: #caa895;
+}
+
+/*Styling the "Add a book" button*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+
+#trigger-form-button {
+    font-size: 16px;
+}
+
+/*Styling the add-book-form*/
+#book-form-container h3{
+    color: #D77A61;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px #BFC0C0 ;
+    border-radius: 2%;
+    width: 98%;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 1%;
+    color: #711C40;
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DBD3D8;
+    border-radius: 4px;
+    font-size: 16px;
+    color:#4F5D75; 
+}
+
+.form-field textarea {
+    padding: 10px;
+    border: 1px solid #DBD3D8;
+    border-radius: 4px;
+    font-size: 15px;
+    max-width: 60rem;
+    min-width: 40rem;
+    min-height: 30rem;;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    border-color: #711C40;
+    outline: none;
+}
+
+#rating-field {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+#rating {
+    margin: 5%;
+}
+
+#rating-star {
+    color:#711C40;
+    margin-left: 5%;
+}
+
+/*Styling the archived-books section*/
+#archived-book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+#added-books-header {
+    color: #D77A61;
+    margin-left: 1%;
+}
+
+.book-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px #BFC0C0;
+    border-radius: 8px;
+    width: 50%;
+    min-height: 450px;
+    gap: 1rem;
+}
+
+.book-cover-container {
+    width: 250px;
+}
+
+.book-cover-container img {
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+.book-details-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.book-title {
+    font-size: 20px;
+    font-style: italic;
+    margin: 0 0 10px;
+    color: #D77A61;
+}
+
+.book-author {
+    font-size: 16px;
+    margin: 0 0 10px;
+    color: #711C40;
+}
+
+.book-rating {
+    font-size: 16px;
+    color: #711C40;
+    margin: 0 0 10px;
+}
+
+.book-rating::before {
+    content: '★ ';
+    color: #711C40;
+}
+
+.book-notes {
+    font-size: 14px;
+    color: #223843;
+}
+
+.book-buttons-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-top: auto;
+}
+
+.book-buttons-container button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*Styling the edit-book-form*/
+.edited-book-container {
+    display: flex;
+    flex-direction: column;
+}
+.edited-book-container label {
+    display: block;
+    margin-bottom: 1%;
+    color: #711C40;
+    font-weight: bold;
+}
+
+.edited-book-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DBD3D8;
+    border-radius: 4px;
+    font-size: 16px;
+    color:#4F5D75; 
+}
+
+.edited-book-container textarea {
+    padding: 10px;
+    border: 1px solid #DBD3D8;
+    border-radius: 4px;
+    font-size: 15px;
+    min-width: 70%;
+    min-height: 35%;
+}
+
+.edited-book-container input:focus,
+.edited-book-container textarea:focus {
+    border-color: #711C40;
+    outline: none;
+}
+
+.edited-buttons-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/*Media queries*/
+/* Small and medium devices */
+@media only screen and (max-width: 768px) {
+#steps-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.book-container {
+    flex-direction: column;
+    align-items: center;
+    width: 35rem;
+}
+
+.form-field textarea {
+    width: 7rem;
+}
+}
+
+/* Medium large devices (laptops/desktops, below 1100px) */
+@media only screen and (max-width: 1100px) {
+    #steps-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

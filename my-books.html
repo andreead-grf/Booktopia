@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booktopia: My Books</title>
+    <link rel="icon" type="image/x-icon" href="/assets/booktopia-favicon.jpg">
+    <script src="https://kit.fontawesome.com/d78ba91ef2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="general-stylesheet.css">
+    <link rel="stylesheet" href="my-books-stylesheet.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav-bar">
+            <div class="logo-image-container">
+                <a href="home.html" id="logo-image-button">
+                    <img src="/assets/booktopia-logo.jpg">
+                </a>
+            </div>
+            <div class="link-container">
+                <input type="text" id="search-bar" placeholder="Find your books">
+            </div>
+            <div class="link-container">
+                <a href="about-us.html" class="nav-links">About Us</a>
+            </div>
+        </nav>
+        <section id="tutorial">
+            <h2 id="tutorial-intro">Hover over the below to see how Booktopia works:</h2>
+            <div id="steps-container">
+                <span class="container", id="step-one">
+                <div class="card">
+                    <div class="image">
+                    <img src="/assets/book-stack-image.jpg" alt="Image of a book stack">
+                    </div>
+                    <div class="text-content">
+                    <h3>Add your books</h3>
+                    <p>This is your space. Create a collection of the books that you wish to hold on to.</p>
+                    <p>You will need to add the book title, author name and a rating. Should you wish to, you can pour here your thoughts regarding that title or add any quotes that stuck with you.</p>
+                    </div>
+                </div>    
+                </span>
+                </span>
+                <span class="container", id="step-two">
+                    <div class="card">
+                        <div class="image">
+                        <img src="/assets/type-image.jpg" alt="Image of hands typing">
+                        </div>
+                        <div class="text-content">
+                        <h3>Edit already added books</h3>
+                        <p>Have you changed your mind? Not a problem.</p>
+                        <p>You can edit or remove added books at your own liking.</p>
+                        <p>This is your space, remember? Cosy it up!</p>
+                        </div>
+                    </div>    
+                </span>
+                <span class="container" id="step-three">
+                    <div class="card">
+                        <div class="image">
+                        <img src="/assets/revisit-image.jpg" alt="Image a flower blooming">
+                        </div>
+                        <div class="text-content">
+                        <h3>Revisit when you need to</h3>
+                        <p>Go on, your book collection will be patiently waiting for you.</p>
+                        <p>Booktopia will keep your readings safe until you get back.</p>
+                        </div>
+                    </div>    
+                </span>          
+            </div>
+            <h2 id="tutorial-outro">Enjoy!</h2>
+        </section>
+        <!-- Adding a book -->
+         <span class="button-container">
+            <button type="button" class="buttons" id="trigger-form-button">Add a Book</button>
+         </span>
+        <section id="book-form-container" style="display: none;">
+            <h3>Complete the following details to add your book:</h3>
+            <form id="book-form">
+                <div class="form-field">
+                    <label for="title">Book Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-field">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+                <div class="form-field" id="rating-field">
+                    <label for="rating">Book Rating:</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                    <i class="fa-solid fa-star" id="rating-star" aria-setsize="16x16"></i>
+                </div>
+                <div class="form-field">
+                    <label for="notes">Your Notes:</label>
+                    <textarea id="notes" name="notes"></textarea>
+                </div>
+                <input type="submit" class="buttons" value="Add">
+            </form>
+            <p id="error-message" style="display: none;"></p>
+        </section> 
+        <!-- Displaying the added books -->
+        <section id="archived-books">
+            <h3 id="added-books-header" style="display: none">Your Previously Added Books:</h3>
+            <span id="archived-book-container"></span>
+        </section>
+        <!-- Displaying the filtered books -->
+        <section id="filtered-books" style="display: none">
+            <div id="search-results-container"></div>
+        </section>
+        <footer class="footer">
+            <p id="copyright-data"><i class="fa-solid fa-copyright"></i> 2024 Booktopia Inc.</i></p>
+            <div id="social-media-icons">
+                <a href="https://www.google.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.google.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.google.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </footer>
+    </div>
+     <script src="my-books-script.js"></script>
+</body>
+</html>
