@@ -1,4 +1,4 @@
-/*Adding the team member*/
+/*Adding the team members*/
 const teamMembers = [
     {
         name: "Jane Davis",
