@@ -182,6 +182,11 @@
     margin-left: 5%;
 }
 
+#error-message {
+    color:#711C40;
+    font-size: 20px;
+}
+
 /*Styling the archived-books section*/
 #archived-book-container {
     display: flex;
